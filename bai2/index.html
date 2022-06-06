@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+  </head>
+  <body id="body">
+    <div class="color-picker">
+      <h1 id="title">COLOR PICKER</h1>
+      <input type="color" id="color-pick" />
+      <div id="colorCode">#000</div>
+    </div>
+  </body>
+
+  <script>
+    let body = document.getElementById("body");
+    let colorInput = document.getElementById("color-pick");
+    let colorCode = document.getElementById("colorCode");
+    let textColor = document.getElementById("title");
+
+    colorInput.addEventListener("input", function () {
+      body.style.backgroundColor = colorInput.value;
+      colorCode.innerHTML = colorInput.value;
+    });
+  </script>
+</html>

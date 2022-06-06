@@ -1,0 +1,32 @@
+:root {
+    --border-color: #ee3278;
+  }
+
+.color-picker {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Exo", sans-serif;
+    color: var(--border-color);
+}
+
+#color-pick {
+    width: 100px;
+    height: 40px;
+    border: 2px solid var(--border-color);
+    background-color: transparent;
+    float: left;
+}
+
+#colorCode {
+    width: 150px;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    text-align: center;
+    font-size: 20px;
+    float: left;
+}
